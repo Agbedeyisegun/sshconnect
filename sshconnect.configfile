@@ -1,0 +1,26 @@
+ 
+# To connect client with a server using ssh using key pair
+below cmd
+
+shell
+
+ssh-keygen -t ed25519 -C "ansible"
+
+# -t is the key pair type 
+#ed25519 is the type of key pair which there are other types also
+# -C is to name the key you are using in dubble quote
+# it will ask the path you want to copy it to if different from /home/user/.ssh/ or ~/.ssh
+# If not changed then just continue wit enter key till the key generated 
+# to confirm the key is generated you check and make sure than 2 keys is generated in this directory, public and private
+Next is the to copy the key pair to the client server with the below cmd 
+
+
+ssh-copy-id -i /home/agbedeyivm1/.ssh/id_ed25519.pub agbedeyi@192.168.10.80
+
+
+
+
+
+
+ ssh agbedeyi@client1 
+
