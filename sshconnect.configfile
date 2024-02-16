@@ -2,7 +2,7 @@
 # To connect client with a server using ssh using key pair
 below cmd
 
-shell
+```bash
 
 ssh-keygen -t ed25519 -C "ansible"
 
@@ -15,12 +15,18 @@ ssh-keygen -t ed25519 -C "ansible"
 Next is the to copy the key pair to the client server with the below cmd 
 
 
+```bash
+
 ssh-copy-id -i /home/agbedeyivm1/.ssh/id_ed25519.pub agbedeyi@192.168.10.80
 
 
 
-
-
+```bash
 
  ssh agbedeyi@client1 
+
+
+
+# troubleshooting
+
 
